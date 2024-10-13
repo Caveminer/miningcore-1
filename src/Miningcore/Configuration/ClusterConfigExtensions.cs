@@ -258,17 +258,13 @@ public partial class KaspaCoinTemplate
     {
         switch(Symbol)
         {
-            case "CSS":
-            case "PUG":
             case "KLS":
-            case "NTL":
-            case "NXL":
                 return "Karlsenhash";
-            case "CAS":
-            case "HTN":
-            case "KODA":
             case "PYI":
                 return "Pyrinhash";
+            case "HTN":
+	    case "PUG":
+		return "Hoohash";
             default:
                 // TODO: return variant
                 return "kHeavyHash";

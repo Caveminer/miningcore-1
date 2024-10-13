@@ -364,33 +364,13 @@ public class KaspaAddressUtility
                 };
 
                 break;
-            case "CSS":
-                this.stringsToBech32Prefixes = new Dictionary<string, KaspaBech32Prefix>
-                {
-                    { ConsensusConstants.ChainPrefixMainnet, KaspaBech32Prefix.KaspaMain },
-                    { ConsensusConstants.ChainPrefixDevnet, KaspaBech32Prefix.KaspaDev },
-                    { ConsensusConstants.ChainPrefixTestnet, KaspaBech32Prefix.KaspaTest },
-                    { ConsensusConstants.ChainPrefixSimnet, KaspaBech32Prefix.KaspaSim },
-                };
-
-                break;
-			case "BGA":
+	    case "BGA":
                 this.stringsToBech32Prefixes = new Dictionary<string, KaspaBech32Prefix>
                 {
                     { BugnaConstants.ChainPrefixMainnet, KaspaBech32Prefix.KaspaMain },
                     { BugnaConstants.ChainPrefixDevnet, KaspaBech32Prefix.KaspaDev },
                     { BugnaConstants.ChainPrefixTestnet, KaspaBech32Prefix.KaspaTest },
                     { BugnaConstants.ChainPrefixSimnet, KaspaBech32Prefix.KaspaSim },
-                };
-
-                break;
-            case "CAS":
-                this.stringsToBech32Prefixes = new Dictionary<string, KaspaBech32Prefix>
-                {
-                    { KaspaClassicConstants.ChainPrefixMainnet, KaspaBech32Prefix.KaspaMain },
-                    { KaspaClassicConstants.ChainPrefixDevnet, KaspaBech32Prefix.KaspaDev },
-                    { KaspaClassicConstants.ChainPrefixTestnet, KaspaBech32Prefix.KaspaTest },
-                    { KaspaClassicConstants.ChainPrefixSimnet, KaspaBech32Prefix.KaspaSim },
                 };
 
                 break;
@@ -404,16 +384,6 @@ public class KaspaAddressUtility
                 };
 
                 break;
-            case "KODA":
-                this.stringsToBech32Prefixes = new Dictionary<string, KaspaBech32Prefix>
-                {
-                    { KobradagConstants.ChainPrefixMainnet, KaspaBech32Prefix.KaspaMain },
-                    { KobradagConstants.ChainPrefixDevnet, KaspaBech32Prefix.KaspaDev },
-                    { KobradagConstants.ChainPrefixTestnet, KaspaBech32Prefix.KaspaTest },
-                    { KobradagConstants.ChainPrefixSimnet, KaspaBech32Prefix.KaspaSim },
-                };
-
-                break;
             case "KLS":
                 this.stringsToBech32Prefixes = new Dictionary<string, KaspaBech32Prefix>
                 {
@@ -421,26 +391,6 @@ public class KaspaAddressUtility
                     { KarlsencoinConstants.ChainPrefixDevnet, KaspaBech32Prefix.KaspaDev },
                     { KarlsencoinConstants.ChainPrefixTestnet, KaspaBech32Prefix.KaspaTest },
                     { KarlsencoinConstants.ChainPrefixSimnet, KaspaBech32Prefix.KaspaSim },
-                };
-
-                break;
-            case "NTL":
-                this.stringsToBech32Prefixes = new Dictionary<string, KaspaBech32Prefix>
-                {
-                    { NautilusConstants.ChainPrefixMainnet, KaspaBech32Prefix.KaspaMain },
-                    { NautilusConstants.ChainPrefixDevnet, KaspaBech32Prefix.KaspaDev },
-                    { NautilusConstants.ChainPrefixTestnet, KaspaBech32Prefix.KaspaTest },
-                    { NautilusConstants.ChainPrefixSimnet, KaspaBech32Prefix.KaspaSim },
-                };
-
-                break;
-            case "NXL":
-                this.stringsToBech32Prefixes = new Dictionary<string, KaspaBech32Prefix>
-                {
-                    { NexelliaConstants.ChainPrefixMainnet, KaspaBech32Prefix.KaspaMain },
-                    { NexelliaConstants.ChainPrefixDevnet, KaspaBech32Prefix.KaspaDev },
-                    { NexelliaConstants.ChainPrefixTestnet, KaspaBech32Prefix.KaspaTest },
-                    { NexelliaConstants.ChainPrefixSimnet, KaspaBech32Prefix.KaspaSim },
                 };
 
                 break;
@@ -461,6 +411,16 @@ public class KaspaAddressUtility
                     { SedraCoinConstants.ChainPrefixDevnet, KaspaBech32Prefix.KaspaDev },
                     { SedraCoinConstants.ChainPrefixTestnet, KaspaBech32Prefix.KaspaTest },
                     { SedraCoinConstants.ChainPrefixSimnet, KaspaBech32Prefix.KaspaSim },
+                };
+
+                break;
+            case "KASV2":
+                this.stringsToBech32Prefixes = new Dictionary<string, KaspaBech32Prefix>
+                {
+                    { Kaspa2Constants.ChainPrefixMainnet, KaspaBech32Prefix.KaspaMain },
+                    { Kaspa2Constants.ChainPrefixDevnet, KaspaBech32Prefix.KaspaDev },
+                    { Kaspa2Constants.ChainPrefixTestnet, KaspaBech32Prefix.KaspaTest },
+                    { Kaspa2Constants.ChainPrefixSimnet, KaspaBech32Prefix.KaspaSim },
                 };
 
                 break;
